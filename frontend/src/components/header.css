@@ -1,0 +1,126 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fullscreen-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header Logo */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.main-container {
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+p {
+    font-size: 1rem;
+    color: #2e2d2d;
+    margin-bottom: 20px;
+}
+
+/* Drag-and-Drop Zone */
+.drag-and-drop {
+    width: 100%;
+    height: 160px;
+    border: 4px dashed #cccccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.drag-and-drop:hover {
+    background-color: #f1f1f1;
+
+}
+
+.drag-and-drop p {
+    margin: 5px 0;
+    color: #777777;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #1363b8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label:hover {
+    color: #0056b3;
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4d4f;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Button */
+.button {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #19692d;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #13471f;
+}

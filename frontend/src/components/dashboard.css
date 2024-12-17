@@ -1,0 +1,148 @@
+/* General Styles */
+.fullscreen-bg {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    position: relative;
+}
+
+.fullscreen-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.fullscreen-bg>* {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #161f28;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* File Upload */
+.file-input-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.file-input {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #F4F4F4;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.card .value {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Prediction Section */
+.prediction {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.prediction h2 {
+    font-size: 2rem;
+    color: #13181e;
+    font-weight: bold;
+}
+
+.prediction-result {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #101412;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Buttons */
+.back-button {
+    margin-top: 20px;
+    background-color: #4e4723;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1f1c0c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
